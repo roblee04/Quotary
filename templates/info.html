@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href={{url_for('static', filename= 'css/style.css')}}>
+    <title>Quotary</title>
+</head>
+<body>
+  <header>
+    <div class='navbar'>
+      <img src='static/css/logo.jpg'>
+      <div style="height: 100%"><a href='https://github.com/roblee04/quotary'><img src='static/css/github.jpeg'></a></div>
+    </div>
+  </header>
+  <div class="body">
+    <div class="quote-box">
+      <q>{{row[0]}}</q>
+    </div>
+    <div class="info-box">
+      <p class="info">Title: {{row[1]}}</p>
+      <p class="info">Themes: {{row[2]}}</p>
+      <a class="info" href={{row[3]}}>Link to Source</a>
+      <form class="back-button" method=post>
+        <!-- <input type=file name=file> -->
+        <input class="button" id="back" type=submit name="Back" value=Back>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

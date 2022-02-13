@@ -1,0 +1,3 @@
+flask
+sqlalchemy
+pysqlite3

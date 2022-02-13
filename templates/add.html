@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href={{url_for('static', filename= 'css/style.css')}}>
+    <title>Quotary</title>
+</head>
+<body>
+  <header>
+    <div class='navbar'>
+      <img src='static/css/logo.jpg'>
+      <div style="height: 100%"><a href='https://github.com/roblee04/quotary'><img src='static/css/github.jpeg'></a></div>
+    </div>
+  </header>
+  <form style="justify-content: flex-start" class="body" method=post enctype=multipart/form-data>
+      <h1>Submit a quotation:</h1>
+      <p>Quote</p>
+      <input type="text" id="quote" name="quote">
+      <p>Title</p>
+      <input type="text" id="title" name="title">
+      <p>Themes</p>
+      <input type="text" id="themes" name="themes">
+      <p>URL for pdf</p>
+      <input type="text" id="pdf" name="pdf">
+      <input class="button" type="submit" value="Submit">
+  </form>
+</body>
+</html>
